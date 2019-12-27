@@ -1,0 +1,26 @@
+{
+    "name": "otakusquare/generic-api-client",
+    "description": "A generic API client intended to allow for easily configured connections between micro services",
+    "authors": [
+        {
+            "name": "Riekelt Brands",
+            "email": "r.brands@otakusquare.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "^7.3"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Otaku\\ApiClient\\": "src/"
+        }
+    }
+}

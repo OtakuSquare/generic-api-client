@@ -53,7 +53,8 @@ class ApiClient
     {
         return json_decode($this->request($method, $endpoint, [
                 RequestOptions::HEADERS => [
-                    'Accept' => 'application/json'
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json',
                 ],
                 RequestOptions::BODY => json_encode($body, JSON_PRESERVE_ZERO_FRACTION)
             ]
